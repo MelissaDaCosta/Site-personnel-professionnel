@@ -1,0 +1,230 @@
+@import "style.css"; /* import style de l'entête du menu et du pied de page */
+@import "stylecote.css"; /* import style de la presentation sur le cote */
+
+/************************************ DIAPORAMA ******************************************/
+nav ul li.centre {
+	background-color: skyblue;  /* reste bleu quand on est sur la page */
+}
+
+
+h2 {        /* les 2 titres de la page */
+	font-size: 25px;               
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 35px;
+	border: 2px solid skyblue;
+	width: 20%;
+}
+
+.titre2 {  
+	margin-top: 10px;  /* pour mettre moins depace entre le texte et la galerie */
+}
+	
+h3 {          /* titre d'intro */
+	text-align: center;
+	font-size: 20px;   
+}
+
+.texte{
+	font-size: 17px;
+	padding: 20px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	width: 65%;
+	background-color: #F2F2F2;
+	text-align: justify;
+}
+/***************************** diapo *******************************************/
+
+.diapo {
+	border: 3px solid skyblue;
+	margin: 0 auto;  /* met le diapo au milieu */
+	width: 90%;
+	height:768px;
+	overflow: hidden;
+	position: relative;
+	background-image: url("../img/diapo/1.jp");  /* 1ere img du diapo */
+}
+
+img {
+	width:100%;
+	height:100%;
+}
+	
+figure{
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+.img1{
+	left: 0;    /* la 1ere image */
+} 
+	
+.img2{
+	left: 100%;    /* la 2eme decalé de 1 img pr pas quon la voie */
+} 
+	
+.img3{      
+	left: 200%;    /* 3eme image idem */
+}  
+	
+.img4{
+	left: 300%;
+}
+
+.img5{
+	left: 400%;
+}
+
+.img {
+	width: 100%;
+	height:100%;
+	left:0px;
+	position: absolute;
+    
+/***********************************************************/
+	/* pour etre supporter par tous les navigateurs  */
+
+	-webkit-animation-duration: 20s;      /* pour safari et opera */
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-name: animation;
+	-moz-animation-duration: 20s;        /* pour mozilla firefox */
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-name: animation;
+	-ms-animation-duration: 20s;          /* pour edge et IE */
+	-ms-animation-iteration-count:infinite;
+	-ms-animation-name: animation;
+/***********************************************************/
+	animation-duration: 20s;            /* duree d'un tour de diapo */
+	animation-iteration-count:infinite;   /* boucle infiniment */
+	animation-name: animation;    
+}
+
+/*******************************************************************/
+
+.diapo figcaption {   /* la legende */
+	position:absolute;
+	left:0; 
+	right:0; 
+	bottom: 5px;
+	padding: 15px;
+	text-align: center;  /* legende au milieu */
+	vertical-align: middle;
+	border-top: 2px solid skyblue;
+	border-bottom: 2px solid skyblue;
+	background-color: grey;
+	color: white;
+}   
+	
+h5 a{
+	color: black;
+}
+	
+h5 {
+	color: black;
+}
+	
+h5 a:hover {
+	color: blue;
+}
+/*******************************************************************/
+/* pour etre supporter par tous les navigateurs  */
+
+@-webkit-keyframes animation {   /* pour safari et opera */
+	0% {left:0px;}
+	15% {left:0px;}
+	22% {left:-100%;}        /* decale 1 img */
+	37% {left:-100%;}         /* ne decale pas de 22 a 37% de l'animation */
+	44% {left:-200%;}          /* decale encore d' une img */
+	59% {left:-200%;}           /* ne decale pas de 44 a 59% de l'animation */
+	66%{left: -300%;}
+	81%{left: -300%;}
+	88% {left: -400%;}
+	96% {left: -400%;}
+}
+
+  
+@-moz-keyframes animation {  /* pour mozilla firefox */
+	0% {left:0px;}
+	15% {left:0px;}
+	22% {left:-100%;}        /* decale 1 img */
+	37% {left:-100%;}         /* ne decale pas de 22 a 37% de l'animation */
+	44% {left:-200%;}          /* decale encore d' une img */
+	59% {left:-200%;}           /* ne decale pas de 44 a 59% de l'animation */
+	66%{left: -300%;}
+	81%{left: -300%;}
+	88% {left: -400%;}
+	96% {left: -400%;}
+}
+
+
+@-ms-keyframes animation {   /* pour edge et IE */
+	0% {left:0px;}
+	15% {left:0px;}
+	22% {left:-100%;}        /* decale 1 img */
+	37% {left:-100%;}         /* ne decale pas de 22 a 37% de l'animation */
+	44% {left:-200%;}          /* decale encore d' une img */
+	59% {left:-200%;}           /* ne decale pas de 44 a 59% de l'animation */
+	66%{left: -300%;}
+	81%{left: -300%;}
+	88% {left: -400%;}
+	96% {left: -400%;}
+}
+/*************************************************************/
+
+@keyframes animation {   /* animation des img decalage */
+	0% {left:0px;}
+	15% {left:0px;}
+	22% {left:-100%;}        /* decale 1 img */
+	37% {left:-100%;}         /* ne decale pas de 22 a 37% de l'animation */
+	44% {left:-200%;}          /* decale encore d' une img */
+	59% {left:-200%;}           /* ne decale pas de 44 a 59% de l'animation */
+	66%{left: -300%;}
+	81%{left: -300%;}
+	88% {left: -400%;}
+	96% {left: -400%;}
+}
+
+
+/********************************** REVENIR EN HAUT **********************************/
+.bouton{
+	position: fixed;
+	bottom: 40px;
+	right: 15px;
+}
+
+.bouton img{
+	width: 20px;
+	height: 20px;
+}
+
+
+/**************************************************************************************/
+/**************************** POUR PETIT ECRAN **************************************/
+
+@media screen and (max-width: 1400px){      
+    .diapo {
+    height:600px;
+    }
+
+    .diapo figcaption {   /* la legende */
+    padding: 10px;
+    width:100%;
+    
+    }
+
+/**************************** POUR LES TABLETTES ***********************************************/
+@media screen and (max-width: 1000px){      
+
+    .diapo {
+    height:400px;
+    }
+
+    .diapo figcaption {   /* la legende */
+    padding: 10px;
+    width:100%; 
+    }
+}

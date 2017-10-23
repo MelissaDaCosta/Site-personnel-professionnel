@@ -1,0 +1,68 @@
+@import "style.css"; /* import style de l'entête du menu et du pied de page */
+@import "stylecote.css"; /* import style de la presentation sur le cote */
+
+
+/**************************************************************** PROJET ****************************************************************/
+nav ul li.menupro {
+	background-color: skyblue;  /* reste bleu quand on est sur la page */
+}
+
+.titre {  
+	font-size: 25px;                             /* titre de la page */
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 35px;
+	border: 2px solid skyblue;
+	width: 20%;
+}
+
+h3 {          /* titre d'intro */
+	text-align: left;
+	font-size: 20px;   
+	margin-left: 25px;
+}
+	 
+section {                /* le gros bloc qui fait toute la page */
+	margin: 0 auto;
+	font-size: 17px; 
+	width: 85%;
+	text-align: justify;
+}
+
+section div {          /* delimitation avec les autres projets */
+	border-bottom: 2px solid skyblue;
+}
+
+
+div:last-child{  /* le dernier article */
+	border-bottom: none;   /* pas de délimitation */
+}
+
+img {          
+	width: 40%;
+	height: 40%;
+	margin: 0 auto;       /* met les images au milieu */
+	display: table;
+}
+
+
+section a{    /* met les liens en noir */
+	color: black;
+}
+
+section a:hover {   /* quand on passe dessus */
+	color: blue;
+}
+
+/********************************** REVENIR EN HAUT **********************************/
+.bouton{
+	position: fixed;
+	bottom: 40px;
+	right: 15px;
+}
+
+.bouton img{
+	width: 20px;
+	height: 20px;
+}

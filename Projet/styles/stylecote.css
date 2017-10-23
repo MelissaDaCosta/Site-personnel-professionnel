@@ -1,0 +1,38 @@
+/************************************ presentation sur le cote*************************/
+
+aside {   
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid skyblue;  
+	border-radius: 10px;      
+	width: 25%;
+	float: right;
+}
+
+aside p {       /* la presentation */
+	display: inline-block;
+}
+
+aside a {
+		color: black;
+}
+
+aside a:hover {   /* quand on passe dessus */
+	color: blue;
+}
+
+.iconepdf img{   /* icone pdf cv */
+	float: right;
+	width: 32px;
+	height: 32px;
+}
+
+/**************************************************************************************/
+/**************************** POUR LES TABLETTES **************************************************/
+@media screen and (max-width: 1024px){
+ 
+	aside {
+	display: none;
+	}
+	
+}
