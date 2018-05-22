@@ -22,6 +22,11 @@ h3 {          /* titre d'intro */
 	font-size: 20px;   
 	margin-left: 25px;
 }
+
+h4 {		/* titre des projets */
+	font-size: 25px; 
+	color : skyblue;
+}
 	 
 section {                /* le gros bloc qui fait toute la page */
 	margin: 0 auto;
@@ -32,8 +37,11 @@ section {                /* le gros bloc qui fait toute la page */
 
 section div {          /* delimitation avec les autres projets */
 	border-bottom: 2px solid skyblue;
+	
 }
-
+div{
+	padding-bottom: 15px;
+}
 
 div:last-child{  /* le dernier article */
 	border-bottom: none;   /* pas de délimitation */
@@ -45,7 +53,6 @@ img {
 	margin: 0 auto;       /* met les images au milieu */
 	display: table;
 }
-
 
 section a{    /* met les liens en noir */
 	color: black;
